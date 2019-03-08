@@ -1,59 +1,38 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-body, html {
-  margin: 0;
-  height: 100%;
-  font-family: 'Arial';
-}
-body {
-  justify-items: center;
-  align-items: center;
-  display: grid;
-  grid-template-rows: auto;
-   background: #708292;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-input.download{
-    text-decoration: none;
-    color: #fff;
-    background: #50a6f6;
-    padding: 8px 10px;
-    border-radius: 3px;
-    display: block;
-    text-align: center;
-    z-index: 100;
-    transition: opacity .8s ease;
-}
-</style>
-<script>
-function download(file)
-{
- window.location=file;
-}
-</script>
-</head>
-<body>
-
-<div class="grid-container">
-  <div class="grid-item"><a href="https://danish778866.github.io/Phase-1">Phase-1</a></div>
-  <div class="grid-item"><a href="https://danish778866.github.io/Phase-2">Phase-2</a></div>
-  <div class="grid-item"><a href="https://danish778866.github.io/Phase-3">Phase-3</a></div>
-  <div class="grid-item"><a href="https://danish778866.github.io/Phase-4">Phase-4</a></div>
-</div>
-
-</body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/show_page.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">SMD</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Team SDS</a></li>
+            <li><a href="https://danish778866.github.io/DataScience/stage_1">Stage 1</a></li>
+            <li><a href="https://danish778866.github.io/DataScience/stage_2">Stage 2</a></li>
+            <li><a href="https://danish778866.github.io/DataScience/stage_3">Stage 3</a></li>
+            <li><a href="https://danish778866.github.io/DataScience/stage_4">Stage 4</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/danish778866" class="fa fa-github"></a></li>
+            <li><a href="https://www.linkedin.com/in/shaikh-danish-47b9817b/" class="fa fa-linkedin"></a></li>
+            <li><a href="https://www.facebook.com/shaikh.m.danish.786" class="fa fa-facebook"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
