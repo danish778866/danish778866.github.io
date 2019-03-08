@@ -7,11 +7,11 @@ INDEX_TEMPLATE = r"""
 <html>
 <body>
 <h2>${header}</h2>
-<p>
+<ol>
 % for name in names:
     <li><a href="${name}">${name}</a></li>
 % endfor
-</p>
+</ol>
 </body>
 </html>
 """
