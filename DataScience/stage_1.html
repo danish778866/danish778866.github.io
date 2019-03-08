@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active"><a href="https://danish778866.github.io/DataScience">About</a></li>
-            <li><a href="https://danish778866.github.io/DataScience/stage_1.html">Stage 1</a></li>
+            <li class="active"><a href="https://danish778866.github.io/DataScience/stage_1.html">Stage 1</a></li>
             <li><a href="https://danish778866.github.io/DataScience/stage_2.html">Stage 2</a></li>
             <li><a href="https://danish778866.github.io/DataScience/stage_3.html">Stage 3</a></li>
             <li><a href="https://danish778866.github.io/DataScience/stage_4.html">Stage 4</a></li>
@@ -50,5 +50,16 @@
              </div>
         </div>
     </div>
+<script>
+$( document ).ready(function() {
+    $('a').each(function(){
+        if ($(this).prop('href') == window.location.href) {
+            $(this).parents('li').addClass('active');
+	} else {
+            $(this).parents('li').removeClass('active');
+	}
+    });
+});
+</script>
   </body>
 </html>
